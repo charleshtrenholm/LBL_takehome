@@ -1,0 +1,13 @@
+.item {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    color: darkslategrey;
+}
+
+.display-count {
+    color: rgb(0, 45, 73);
+    margin-bottom: 10px;
+}

@@ -1,0 +1,21 @@
+<h5 class="offset-1 pt-1">Filter by ID:</h5>
+<div class="row justify-content-center">
+    <div class="col-10" style="margin: 0px auto;">
+        <!-- <h5 style="display: inline;" class="col-2">Filter by ID:</h5> -->
+        <div class="btn-group col-12" role="group" aria-label="ID filter">
+            <button 
+                type="button"
+                class="btn btn-info" 
+                *ngFor="let item of filterArray"
+                (click)="setFilter(item)"
+                >
+                {{item[0]}}-{{item[1]}}
+            </button>
+            <button
+                type="button"
+                class="btn btn-secondary"
+                (click)="setFilter([])"
+            >Clear Filter</button>
+        </div>
+    </div>
+</div>

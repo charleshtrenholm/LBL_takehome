@@ -1,0 +1,10 @@
+<div class="row justify-content-center">
+    <div class="container col-10">
+            <h4 style="color:darkslategrey; margin-top: 10px;">Displaying {{posts.length}} results</h4>
+        <div class="card item" *ngFor="let post of posts">
+            <h3>{{post.title}}</h3>
+            <p>{{post.body}}</p>
+            <p class="user-info">Post ID: {{post.id}} | Posted by User #{{post.userId}}</p>
+        </div>
+    </div>
+</div>

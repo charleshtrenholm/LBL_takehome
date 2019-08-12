@@ -1,0 +1,15 @@
+<div class="search-input" style="margin-top: 10px; margin-bottom:10px;">
+    <div class="input-group col-10" style="margin: 0px auto;">
+        <input
+            type="text"
+            class="form-control"
+            placeholder="Enter search terms here"
+            aria-label="Search filter"
+            [(ngModel)]="inputSearch"
+        >
+        <div class="input-group-append">
+            <button class="btn btn-success input-group-text" (click)="setSearch()">Search</button>
+            <button class="butn btn-secondary input-group-text" (click)="clearSearch()">Clear</button>
+        </div>
+    </div>
+</div>
