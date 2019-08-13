@@ -6,6 +6,7 @@
             placeholder="Enter search terms here"
             aria-label="Search filter"
             [(ngModel)]="inputSearch"
+            (keyup.enter)="setSearch()" 
         >
         <div class="input-group-append">
             <button class="btn btn-success input-group-text" (click)="setSearch()">Search</button>
